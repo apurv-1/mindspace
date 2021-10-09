@@ -1,0 +1,123 @@
+.card-container {
+  /* margin-top: 5%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tags {
+  text-decoration: none;
+}
+
+.text-box {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 20px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.form-btn {
+  margin-top: 15px;
+  width: 150px;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #086ffa;
+  color: white;
+  border-radius: 10px;
+}
+
+.up-image-container {
+  margin-top: 30px;
+}
+.image-upload {
+  width: 50rem;
+  border-radius: 20px;
+}
+.upload-div {
+  padding: 10px;
+}
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+/* .left-btn {
+  margin-left: 15px;
+} */
+.image-prev {
+  height: 400px;
+}
+
+.row-div {
+  margin-top: 5%;
+  /* display: flex;
+  flex-direction: row;
+  m
+  justify-content: space-around; */
+}
+.user-image {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.input-bars {
+  display: flex;
+  flex-direction: column;
+}
+.ip-bar {
+  margin-top: 20px;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cog-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 30px;
+}
+
+.graph-card {
+  padding: 20px;
+  border-radius: 40px !important;
+}
+
+.table-header {
+  background-color: #3f51b5;
+  padding: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .card-container {
+    margin-top: 20px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .text-box {
+    margin: 0 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .image-upload {
+    width: 20rem;
+  }
+  .ip-bar {
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .user-image {
+    border-radius: 50%;
+    height: 100px;
+  }
+}

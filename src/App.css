@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart-1 {
+  height: 500px;
+  width: 600px;
+}
+.chart-2 {
+  height: 500px;
+  width: 600px;
+}
+.chart-3 {
+  height: 500px;
+  width: 600px;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
