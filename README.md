@@ -1,9 +1,4 @@
-# MindSpace - Your Mental Wellness tracker (Hack X)
-<a href="https://www.scaler.com/event/hackx/">
-  <p align="center">
-    <img src="https://i.imgur.com/QbwPFZM.jpg" />
-  </p>
-</a>
+# MindSpace - Your Mental Wellness tracker
 The proposed MindSpace application acts like your personal therapist that tracks your mood, processes your facial expressions and classifies your thoughts to create analytic reports that help you and your doctor better understand your mind.
 
 
