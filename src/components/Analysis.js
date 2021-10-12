@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from "./Charts/Table";
 import { GetDataById } from "../Firebase/writemood";
+import Fade from "react-reveal/Fade";
 //import {Getdata}  from "../../Firebase/cognigitiveapi";
 import Loading from "./Loading";
 const Analysis = () => {
@@ -25,8 +26,8 @@ const Analysis = () => {
   //   console.log(wymData);
   //   console.log(des);
   // }, [wymData, profile.uid]);
-  
-   /* eslint-disable */
+
+  /* eslint-disable */
   useEffect(() => {
     if (localStorage.getItem("user-details") !== null) {
       let values = localStorage.getItem("user-details");
@@ -70,9 +71,11 @@ const Analysis = () => {
     <Loading />
   ) : (
     <div className="container">
-      <div>
-        <Table />
-      </div>
+      <Fade>
+        <div>
+          <Table />
+        </div>
+      </Fade>
 
       {/* <div className="charts">
         <div className="chart-1">

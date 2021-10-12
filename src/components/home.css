@@ -4,6 +4,10 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.MuiCardMedia-img {
+  object-fit: cover;
+  width: 400px !important;
+}
 
 .tags {
   text-decoration: none;
@@ -92,6 +96,10 @@
 }
 
 @media screen and (max-width: 580px) {
+  .MuiCardMedia-img {
+    object-fit: cover;
+    width: 350px !important;
+  }
   .card-container {
     margin-top: 20px;
     margin: 0 20px;
