@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 // import { useStateValue } from "../StateProvider";
 import { Button } from "@material-ui/core";
 import firebase from "firebase";
+import "./profile.css";
+import Fade from "react-reveal/Fade";
 // import { Redirect } from "react-router-dom";
 
 const Profile = ({ history }) => {
@@ -28,9 +30,9 @@ const Profile = ({ history }) => {
   };
 
   return (
-    <div className="container">
-      <h1>Profile</h1>
-      {/* <div className="row-div">
+    <div className="container pro-cont">
+      <Fade>
+        {/* <div className="row-div">
         <center>
           <img className="user-image" src={user.photoURL} />
         </center>
@@ -41,20 +43,27 @@ const Profile = ({ history }) => {
           </center>
         </div>
       </div> */}
-      <div className="row-div">
-        <center>
-          <img className="user-image" src={profile.photoURL} alt="xyz" />
-        </center>
-        <div className="form-div">
-          <center>
-            <h1> {profile.displayName}</h1>
-            <h1> {profile.email}</h1>
-            <Button variant="contained" color="primary" onClick={handleLogout}>
-              Logout
-            </Button>
-          </center>
+        <div className="row-div">
+          <div className="profile-image">
+            <center>
+              <img className="user-image" src={profile.photoURL} alt="xyz" />
+            </center>
+          </div>
+          <div className="form-div">
+            <center>
+              <p className="profile-text"> {profile.displayName}</p>
+              <p className="profile-text"> {profile.email}</p>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleLogout}
+              >
+                Logout
+              </Button>
+            </center>
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 };
